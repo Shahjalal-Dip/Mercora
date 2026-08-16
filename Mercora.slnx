@@ -1,3 +1,11 @@
 <Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".gitignore" />
+  </Folder>
+  <Folder Name="/Tests/" />
+  <Project Path="Mercora.Api/Mercora.Api.csproj" />
+  <Project Path="Mercora.Application/Mercora.Application.csproj" />
+  <Project Path="Mercora.Domain/Mercora.Domain.csproj" />
+  <Project Path="Mercora.Infrastructure/Mercora.Infrastructure.csproj" />
   <Project Path="Mercora.Web/Mercora.Web.csproj" />
 </Solution>

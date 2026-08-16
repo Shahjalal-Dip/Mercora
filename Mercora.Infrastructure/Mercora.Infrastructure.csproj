@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Mercora.Application\Mercora.Application.csproj" />
+  </ItemGroup>
+
 </Project>
