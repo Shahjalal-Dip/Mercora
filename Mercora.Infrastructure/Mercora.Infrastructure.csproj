@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Mercora.Application\Mercora.Application.csproj" />
+    <ProjectReference Include="..\Mercora.Domain\Mercora.Domain.csproj" />
   </ItemGroup>
 
 </Project>

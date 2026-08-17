@@ -2,7 +2,10 @@
   <Folder Name="/Solution Items/">
     <File Path=".gitignore" />
   </Folder>
-  <Folder Name="/Tests/" />
+  <Folder Name="/Tests/">
+    <Project Path="Mercora.Tests.Integration/Mercora.Tests.Integration.csproj" Id="e26b517e-5921-4e71-a561-5d80a3577027" />
+    <Project Path="Mercora.Tests.Unit/Mercora.Tests.Unit.csproj" Id="d7d5c4d6-ff0b-4749-936d-c7d14146b7c9" />
+  </Folder>
   <Project Path="Mercora.Api/Mercora.Api.csproj" />
   <Project Path="Mercora.Application/Mercora.Application.csproj" />
   <Project Path="Mercora.Domain/Mercora.Domain.csproj" />
