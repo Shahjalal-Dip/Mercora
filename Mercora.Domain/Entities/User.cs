@@ -1,12 +1,36 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Mercora.Domain.Entities
 {
-    internal class User
+    public class User:BaseEntity
     {
+        [Required]
+        [MaxLength(100)]
+        public string FirstName { get; set; } = string.Empty;
+        [Required]
+        [MaxLength (100)]
+        public string LastName { get; set; } = string.Empty;
+        [Required]
+        [EmailAddress]
+        [MaxLength(255)]
+        public string Email { get; set; } = string.Empty;
+        [Required]
+        public string PasswordHash { get; set; } = string.Empty;
+        [MaxLength(20)]
+        public string? PhoneNumber { get; set; }
+        public UserRole Role { get; set; } = UserRole.Customer;
+        public bool EmailConfirmed { get; set;  }
+        public DateTime? LastLoginAt { get; set; }
+        public string? RefreshToken {  get; set; }
+        public DateTime? RefreshTokenExpiryTime {  get; set; }
+        public virtual ICollection<Address> Addresses { get; set; } = new List<Address>();
+        public virtual ICollection<Order> Orders { get; set; } = new List<Order>();
+        public virtual Cart? Cart { get; set; }
+        public virtual ICollection<Review> Reviews { get; set; } = new List<Review>();
     }
 }
